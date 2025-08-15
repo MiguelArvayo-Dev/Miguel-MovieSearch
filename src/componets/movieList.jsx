@@ -9,15 +9,11 @@ function MovieList({ movies }) {
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
 export function Movies({ movies }) {
-  const hasMovies = movies?.length > 0;
+  const hasMovies = movies?.length > 0
 
-  return hasMovies ? (
-    <MovieList movies={movies} />
-  ) : (
-    <p>No se encontraron Peliculas</p>
-  );
+  return hasMovies ? <MovieList movies={movies} /> : null
 }
